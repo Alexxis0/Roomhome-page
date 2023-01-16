@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
+$Dark-Gray: hsl(0, 0%, 63%);
+$Black: hsl(0, 0%, 0%);
+$White: hsl(0, 0%, 100%);
+$Very-Dark-Gray: hsl(0, 0%, 27%);
+
+:root {
+    font-size: 12px;
+}
+
+* {
+    font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+
+    p {
+        color: $Dark-Gray;
+    }
+
+    .slide_header {
+        grid-area: 1 / 1 / 4 / 5;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .slide_para {
+        position: relative;
+        grid-area: 1 / 5 / 4 / 8;
+        display: flex;
+        flex-direction: column;
+        padding: 120px 120px 0px 100px;
+
+        h3 {
+            font-size: 3.7rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.23rem;
+            line-height: 20px;
+            margin-bottom: 30px;
+        }
+
+        span {
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            letter-spacing: 17px;
+        }
+        .shop_now{
+            display: flex;
+            align-items: center;
+        }
+        .slider{
+            position: absolute;
+            bottom: 44px;
+            left: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 160px;
+            height: 80px;
+            background-color: $Black;
+            img{
+                height: 25px;
+            }
+        }
+    }
+
+    .slide_about_left {
+        grid-area: 4 / 1 / 6 / 3;
+    }
+
+    .slide_center {
+        grid-area: 4 / 3 / 6 / 6;
+    }
+
+    .slide_about_right {
+        grid-area: 4 / 6 / 6 / 8;
+    }
+}

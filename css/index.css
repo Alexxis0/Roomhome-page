@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap");
+:root {
+  font-size: 12px;
+}
+
+* {
+  font-family: "League Spartan", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+}
+body p {
+  color: hsl(0deg, 0%, 63%);
+}
+body .slide_header {
+  grid-area: 1/1/4/5;
+}
+body .slide_header img {
+  width: 100%;
+}
+body .slide_para {
+  position: relative;
+  grid-area: 1/5/4/8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 120px 120px 0px 100px;
+}
+body .slide_para h3 {
+  font-size: 3.7rem;
+  margin-bottom: 20px;
+}
+body .slide_para p {
+  font-size: 1.23rem;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+body .slide_para span {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 17px;
+}
+body .slide_para .shop_now {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .slide_para .slider {
+  position: absolute;
+  bottom: 44px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 160px;
+  height: 80px;
+  background-color: hsl(0deg, 0%, 0%);
+}
+body .slide_para .slider img {
+  height: 25px;
+}
+body .slide_about_left {
+  grid-area: 4/1/6/3;
+}
+body .slide_center {
+  grid-area: 4/3/6/6;
+}
+body .slide_about_right {
+  grid-area: 4/6/6/8;
+}
